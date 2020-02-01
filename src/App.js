@@ -15,7 +15,7 @@ import dummydata from "./dummy-data";
 
 const App = () => {
   // set up state for the dummy data and pass to your PostsPage
-  const [posts, setPosts] = useState(dummydata);
+  const [posts] = useState(dummydata);
   // console.log(dummydata);
   return (
     <div className="App">
