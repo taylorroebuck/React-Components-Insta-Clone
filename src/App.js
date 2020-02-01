@@ -15,9 +15,12 @@ import dummydata from "./dummy-data";
 
 const App = () => {
   // set up state for the dummy data and pass to your PostsPage
+  const [posts, setPosts] = useState(dummydata);
+  // console.log(dummydata);
   return (
     <div className="App">
-      {/* Add components here  and pass props where appropriate */}
+      <SearchBar />
+      <PostsPage postsData={posts} />
     </div>
   );
 };

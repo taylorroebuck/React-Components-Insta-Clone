@@ -8,7 +8,9 @@ const PostsPage = (props) => {
   console.log("postsPage props", props);
   return (
     <div className="posts-container-wrapper">
-      {/* map through data here */}
+      {props.postsData.map(p => (
+        <Post key={p.imageURL} post={p} />
+      ))};
     </div>
   );
 };
